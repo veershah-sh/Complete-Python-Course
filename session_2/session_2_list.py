@@ -1,19 +1,39 @@
-# List Datatype
+# list
 
-# declare / define a list
-values = [39, True, None, "name", 54.30]
+cars = ["bmw", "mg", "ms", "honda"]
 
-# print a list
-print(values)
+# print(cars)
+# print(type(cars))
 
-# append - adds a value at the end of the list
-values.append("apple")
-values.append(30)
-values.append(False)
-values.append(["a", "b", "c"])
+values_list = ["xyz", 2524, 3.14, True, None]
+# print(values_list)
+# print(type(values_list))
+
+# Indexing
+new_values_list = ["xyz", 2524, 3.14, True, None]
+# print(new_values_list[0])
+# print(new_values_list[-1])
+
+# List methods
+
+# Append method adds a value to the end of the list.
+
+new_values_list.append("Computer")
+new_values_list.append(23)
+
+new_values_list.append([1,2,3])
+
+nums = [4,5,6]
+new_values_list.append(nums)
 
 
-# copy - it creates and returns a shallow copy of your list
-new_values = values.copy()
+new_nums = [1,2,3,4]
 
-print(new_values)
+nn = new_nums.copy()
+
+new_nums.append(5)
+
+nn_new = new_nums.copy()
+
+print(nn)
+print(nn_new)
